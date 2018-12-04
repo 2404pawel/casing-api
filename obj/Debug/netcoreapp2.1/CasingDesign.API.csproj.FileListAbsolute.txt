@@ -1,0 +1,14 @@
+/Users/plopata/Desktop/AGH/inzynierka/CasingDesign.API/bin/Debug/netcoreapp2.1/CasingDesign.API.deps.json
+/Users/plopata/Desktop/AGH/inzynierka/CasingDesign.API/bin/Debug/netcoreapp2.1/CasingDesign.API.runtimeconfig.json
+/Users/plopata/Desktop/AGH/inzynierka/CasingDesign.API/bin/Debug/netcoreapp2.1/CasingDesign.API.runtimeconfig.dev.json
+/Users/plopata/Desktop/AGH/inzynierka/CasingDesign.API/bin/Debug/netcoreapp2.1/CasingDesign.API.dll
+/Users/plopata/Desktop/AGH/inzynierka/CasingDesign.API/bin/Debug/netcoreapp2.1/CasingDesign.API.pdb
+/Users/plopata/Desktop/AGH/inzynierka/CasingDesign.API/obj/Debug/netcoreapp2.1/CasingDesign.API.csprojAssemblyReference.cache
+/Users/plopata/Desktop/AGH/inzynierka/CasingDesign.API/obj/Debug/netcoreapp2.1/CasingDesign.API.csproj.CoreCompileInputs.cache
+/Users/plopata/Desktop/AGH/inzynierka/CasingDesign.API/obj/Debug/netcoreapp2.1/CasingDesign.API.RazorAssemblyInfo.cache
+/Users/plopata/Desktop/AGH/inzynierka/CasingDesign.API/obj/Debug/netcoreapp2.1/CasingDesign.API.RazorAssemblyInfo.cs
+/Users/plopata/Desktop/AGH/inzynierka/CasingDesign.API/obj/Debug/netcoreapp2.1/CasingDesign.API.AssemblyInfoInputs.cache
+/Users/plopata/Desktop/AGH/inzynierka/CasingDesign.API/obj/Debug/netcoreapp2.1/CasingDesign.API.AssemblyInfo.cs
+/Users/plopata/Desktop/AGH/inzynierka/CasingDesign.API/obj/Debug/netcoreapp2.1/CasingDesign.API.RazorTargetAssemblyInfo.cache
+/Users/plopata/Desktop/AGH/inzynierka/CasingDesign.API/obj/Debug/netcoreapp2.1/CasingDesign.API.dll
+/Users/plopata/Desktop/AGH/inzynierka/CasingDesign.API/obj/Debug/netcoreapp2.1/CasingDesign.API.pdb
