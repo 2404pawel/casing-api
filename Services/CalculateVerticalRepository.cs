@@ -311,6 +311,30 @@ namespace CasingDesign.API.Models
             // return maxCasingDepthsForCollapseBiAxialTotalCost;
         }
 
+        public List<CasingDto> CalculateCasingDesign(InputData inputData)
+        {
+            var casingInventoryCollecion = GetCasingInventoryListByDiameter(inputData.Diameter);
+            
+            double burstRequiredResistance = BurstValue(inputData.PorePressure, inputData.BurstFactor); 
+
+            double collapseRequiredResistance = CollapseValueAtShoe(inputData.FluidDensity, inputData.Depth, inputData.CollapseFactor);
+
+            CasingDto firstCasingForBurstAndCollapse = FirstCasingForBurstAndCollapse(casingInventoryCollecion, burstRequiredResistance, collapseRequiredResistance, inputData.Depth);
+
+            var casingResultsListToSelect = casingInventoryCollecion.Where(c => c.Burst >= burstRequiredResistance 
+                                            && c.Collapse < firstCasingForBurstAndCollapse.Collapse // < firstCas... not to put first (burst&collapse OK) to list. Otherwise would be <=
+                                            && c.Cost < firstCasingForBurstAndCollapse.Cost).OrderBy(c => c.Cost);
+            
+            var maxCasingDepthsWithoutAxial = MaxCasingDepthsWithoutAxial(casingResultsListToSelect,firstCasingForBurstAndCollapse, inputData.Depth, inputData.FluidDensity, inputData.CollapseFactor);
+
+            var selectedCasingDepthsWithoutAxialBestCost = SelectedCasingDepthsWithoutAxialBestCost(maxCasingDepthsWithoutAxial, firstCasingForBurstAndCollapse);
+
+            var minLengthChecked = MinLengthCheck(selectedCasingDepthsWithoutAxialBestCost, inputData.MinimalSectionLength);
+            LengthCalc(minLengthChecked);
+
+            return minLengthChecked;
+        }
+
 
 
 

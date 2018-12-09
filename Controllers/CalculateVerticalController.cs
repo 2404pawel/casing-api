@@ -34,5 +34,13 @@ namespace CasingDesign.API.Controllers
             return Ok(casing);
         }
 
+        [HttpPost("/vertical")]
+        public IActionResult CalculateCasingDesign([FromBody] InputData inputData)
+        {
+            var casing = _calculateVerticalRepository.CalculateCasingDesign(inputData);
+
+            return Ok(casing);
+        }
+
     }
 }

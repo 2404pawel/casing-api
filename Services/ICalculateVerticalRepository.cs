@@ -24,6 +24,8 @@ namespace CasingDesign.API.Services
         List<CasingDto> CalculateCasingDesign(double diameter, double depth, double fluidDensity, 
                                     double porePressure, double burstFactor, double collapseFactor, 
                                     double tensionFactor, double minimalSectionLength );
+        
+        List<CasingDto> CalculateCasingDesign(InputData inputData);
 
                 
                 
