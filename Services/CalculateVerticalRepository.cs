@@ -12,6 +12,7 @@ namespace CasingDesign.API.Models
     {
         private CasingDesignContext _casingDesignContext;
 
+
         public CalculateVerticalRepository(CasingDesignContext casingDesignContext)
         {
             _casingDesignContext = casingDesignContext; //wstrzykuje zaleznosc baze danych zeby z niej korzystac w obl.

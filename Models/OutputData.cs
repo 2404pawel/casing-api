@@ -1,13 +1,9 @@
 using System;
-using System.Threading.Tasks;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace CasingDesign.API.Models
 {
-    public class CasingDto
+    public class OutputData
     {
-        //public int Id { get; set; }
         public double ExternalDiameter { get; set; }   
         public double InternalDiameter { get; set; }
         public string Name { get; set; }
