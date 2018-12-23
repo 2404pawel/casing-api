@@ -32,8 +32,8 @@ namespace CasingDesign.API
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-            services.AddDbContext<CasingDesignContext>(options=>options.UseSqlite("Data Source=/Users/plopata/Desktop/AGH/inzynierka/CasingDesign.API/CasingInventory.db"));
-            //services.AddDbContext<CasingDesignContext>(options => options.UseSqlServer(Configuration.GetConnectionString("CasingInventory")));
+            //services.AddDbContext<CasingDesignContext>(options=>options.UseSqlite("Data Source=/Users/plopata/Desktop/AGH/inzynierka/CasingDesign.API/CasingInventory.db"));
+            services.AddDbContext<CasingDesignContext>(options => options.UseSqlServer(Configuration.GetConnectionString("CasingInventory")));
 
             services.AddSwaggerGen(c =>
             {
